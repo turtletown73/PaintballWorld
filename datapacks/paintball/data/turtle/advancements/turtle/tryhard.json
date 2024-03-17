@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_sword",
+            "nbt": "{Enchantments:[{id:'sharpness',lvl:255}]}"
+        },
+        "title": "Tryhard",
+        "description": "Get a win streak of 3 or more",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:textures/block/hay_block_side.png"
+    },
+    "criteria": {
+        "e": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:zombie"
+                }
+            }
+        }
+    },
+    "parent": "turtle:turtle/genocide"
+}

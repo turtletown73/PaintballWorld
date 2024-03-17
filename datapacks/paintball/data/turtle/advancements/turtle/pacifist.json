@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:barrier"
+        },
+        "title": "Pacifist",
+        "description": "Win a game of paintball without killing anyone",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:textures/block/hay_block_side.png"
+    },
+    "criteria": {
+        "e": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:zombie"
+                }
+            }
+        }
+    },
+    "parent": "turtle:turtle/win"
+}

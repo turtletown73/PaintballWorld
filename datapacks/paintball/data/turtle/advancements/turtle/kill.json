@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_sword"
+        },
+        "title": "Shoot Someone!",
+        "description": "Hit someone with a paintball.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:textures/block/hay_block_side.png"
+    },
+    "criteria": {
+        "joined_game": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:player"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "turtle:turtle/root",
+    "rewards": {
+        "function": "turtle:kill"
+    }
+}

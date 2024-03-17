@@ -1,0 +1,1 @@
+execute unless score @s advancementKill matches 1 run advancement grant @s only turtle:turtle/kill

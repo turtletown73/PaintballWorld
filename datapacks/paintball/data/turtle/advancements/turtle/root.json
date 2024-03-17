@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:red_concrete"
+        },
+        "title": "Paintball",
+        "description": "Welcome To Paintball!",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:textures/block/white_concrete.png"
+    },
+    "criteria": {
+        "joined_game": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "turtle:join"
+    }
+}

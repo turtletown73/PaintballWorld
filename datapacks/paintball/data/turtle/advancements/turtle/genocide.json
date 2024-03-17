@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{Enchantments:[{id:'sharpness',lvl:255}]}"
+        },
+        "title": "Genocide",
+        "description": "Win a game of paintball killing at least 15 people",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:textures/block/hay_block_side.png"
+    },
+    "criteria": {
+        "e": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:zombie"
+                }
+            }
+        }
+    },
+    "parent": "turtle:turtle/win"
+}
